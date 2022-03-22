@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-prologue-v0_1_6.flake = false;
+  inputs.src-prologue-v0_1_6.ref   = "refs/tags/v0.1.6";
   inputs.src-prologue-v0_1_6.owner = "planety";
-  inputs.src-prologue-v0_1_6.ref   = "v0_1_6";
   inputs.src-prologue-v0_1_6.repo  = "Prologue";
   inputs.src-prologue-v0_1_6.type  = "github";
   
