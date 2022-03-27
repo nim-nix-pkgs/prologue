@@ -11,6 +11,7 @@
   inputs.src-prologue-v0_2_0.ref   = "refs/tags/v0.2.0";
   inputs.src-prologue-v0_2_0.owner = "planety";
   inputs.src-prologue-v0_2_0.repo  = "Prologue";
+  inputs.src-prologue-v0_2_0.dir   = "";
   inputs.src-prologue-v0_2_0.type  = "github";
   
   inputs."regex".owner = "nim-nix-pkgs";
