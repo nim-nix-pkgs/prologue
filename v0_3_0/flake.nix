@@ -11,7 +11,6 @@
   inputs.src-prologue-v0_3_0.ref   = "refs/tags/v0.3.0";
   inputs.src-prologue-v0_3_0.owner = "planety";
   inputs.src-prologue-v0_3_0.repo  = "Prologue";
-  inputs.src-prologue-v0_3_0.dir   = "";
   inputs.src-prologue-v0_3_0.type  = "github";
   
   inputs."regex".owner = "nim-nix-pkgs";
@@ -45,6 +44,14 @@
   inputs."cookies".type  = "github";
   inputs."cookies".inputs.nixpkgs.follows = "nixpkgs";
   inputs."cookies".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."httpx".owner = "nim-nix-pkgs";
+  inputs."httpx".ref   = "master";
+  inputs."httpx".repo  = "httpx";
+  inputs."httpx".dir   = "v0_2_8";
+  inputs."httpx".type  = "github";
+  inputs."httpx".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."httpx".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 

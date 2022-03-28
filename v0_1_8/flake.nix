@@ -11,7 +11,6 @@
   inputs.src-prologue-v0_1_8.ref   = "refs/tags/v0.1.8";
   inputs.src-prologue-v0_1_8.owner = "planety";
   inputs.src-prologue-v0_1_8.repo  = "Prologue";
-  inputs.src-prologue-v0_1_8.dir   = "";
   inputs.src-prologue-v0_1_8.type  = "github";
   
   inputs."regex".owner = "nim-nix-pkgs";
@@ -37,6 +36,14 @@
   inputs."karax".type  = "github";
   inputs."karax".inputs.nixpkgs.follows = "nixpkgs";
   inputs."karax".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."github.com/planety/cookies".owner = "nim-nix-pkgs";
+  inputs."github.com/planety/cookies".ref   = "master";
+  inputs."github.com/planety/cookies".repo  = "github.com/planety/cookies";
+  inputs."github.com/planety/cookies".dir   = "";
+  inputs."github.com/planety/cookies".type  = "github";
+  inputs."github.com/planety/cookies".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/planety/cookies".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   inputs."httpbeast".owner = "nim-nix-pkgs";
   inputs."httpbeast".ref   = "master";
