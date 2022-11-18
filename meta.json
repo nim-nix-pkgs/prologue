@@ -1728,7 +1728,7 @@
   "heads": [
     {
       "name": "prologue",
-      "version": "0.6.0",
+      "version": "0.6.2",
       "author": "flywind",
       "desc": "Prologue is an elegant and high performance web framework",
       "license": "Apache-2.0",
@@ -1749,10 +1749,10 @@
         },
         {
           "name": "regex",
-          "str": ">= 0.16.2",
+          "str": ">= 0.20.0",
           "ver": {
             "kind": "verEqLater",
-            "ver": "0.16.2"
+            "ver": "0.20.0"
           }
         },
         {
