@@ -1690,46 +1690,11 @@
       "srcDir": "src",
       "backend": "c",
       "ref": "refs/tags/v0.6.2"
-    }
-  ],
-  "description": "Another micro web framework.",
-  "license": "MIT",
-  "web": "https://github.com/planety/Prologue",
-  "doc": "https://planety.github.io/prologue",
-  "refs": [
-    "refs/heads/devel",
-    "refs/tags/0.4.4",
-    "refs/tags/0.4.6",
-    "refs/tags/V0.5.8",
-    "refs/tags/v.0.4.8",
-    "refs/tags/v0.1.6",
-    "refs/tags/v0.1.8",
-    "refs/tags/v0.2.0",
-    "refs/tags/v0.2.2",
-    "refs/tags/v0.2.4",
-    "refs/tags/v0.2.6",
-    "refs/tags/v0.2.8",
-    "refs/tags/v0.3.0",
-    "refs/tags/v0.3.2",
-    "refs/tags/v0.3.4",
-    "refs/tags/v0.3.6",
-    "refs/tags/v0.4.0",
-    "refs/tags/v0.4.2",
-    "refs/tags/v0.4.8",
-    "refs/tags/v0.5.0",
-    "refs/tags/v0.5.2",
-    "refs/tags/v0.5.4",
-    "refs/tags/v0.5.6",
-    "refs/tags/v0.5.8",
-    "refs/tags/v0.6.0",
-    "refs/tags/v0.6.2",
-    ""
-  ],
-  "heads": [
+    },
     {
       "name": "prologue",
-      "version": "0.6.2",
-      "author": "flywind",
+      "version": "0.6.4",
+      "author": "ringabout",
       "desc": "Prologue is an elegant and high performance web framework",
       "license": "Apache-2.0",
       "skipDirs": [],
@@ -1773,10 +1738,114 @@
         },
         {
           "name": "httpx",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
+          }
+        },
+        {
+          "name": "logue",
           "str": ">= 0.2.0",
           "ver": {
             "kind": "verEqLater",
             "ver": "0.2.0"
+          }
+        }
+      ],
+      "bin": [],
+      "binDir": "",
+      "srcDir": "src",
+      "backend": "c",
+      "ref": "refs/tags/v0.6.4"
+    }
+  ],
+  "description": "Another micro web framework.",
+  "license": "MIT",
+  "web": "https://github.com/planety/Prologue",
+  "doc": "https://planety.github.io/prologue",
+  "refs": [
+    "refs/heads/devel",
+    "refs/tags/0.4.4",
+    "refs/tags/0.4.6",
+    "refs/tags/V0.5.8",
+    "refs/tags/v.0.4.8",
+    "refs/tags/v0.1.6",
+    "refs/tags/v0.1.8",
+    "refs/tags/v0.2.0",
+    "refs/tags/v0.2.2",
+    "refs/tags/v0.2.4",
+    "refs/tags/v0.2.6",
+    "refs/tags/v0.2.8",
+    "refs/tags/v0.3.0",
+    "refs/tags/v0.3.2",
+    "refs/tags/v0.3.4",
+    "refs/tags/v0.3.6",
+    "refs/tags/v0.4.0",
+    "refs/tags/v0.4.2",
+    "refs/tags/v0.4.8",
+    "refs/tags/v0.5.0",
+    "refs/tags/v0.5.2",
+    "refs/tags/v0.5.4",
+    "refs/tags/v0.5.6",
+    "refs/tags/v0.5.8",
+    "refs/tags/v0.6.0",
+    "refs/tags/v0.6.2",
+    "refs/tags/v0.6.4",
+    ""
+  ],
+  "heads": [
+    {
+      "name": "prologue",
+      "version": "0.6.4",
+      "author": "ringabout",
+      "desc": "Prologue is an elegant and high performance web framework",
+      "license": "Apache-2.0",
+      "skipDirs": [],
+      "skipFiles": [],
+      "skipExt": [],
+      "installDirs": [],
+      "installFiles": [],
+      "installExt": [],
+      "requires": [
+        {
+          "name": "nim",
+          "str": ">= 1.6.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "1.6.0"
+          }
+        },
+        {
+          "name": "regex",
+          "str": ">= 0.20.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.20.0"
+          }
+        },
+        {
+          "name": "nimcrypto",
+          "str": ">= 0.5.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.5.4"
+          }
+        },
+        {
+          "name": "cookiejar",
+          "str": ">= 0.2.0",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.2.0"
+          }
+        },
+        {
+          "name": "httpx",
+          "str": ">= 0.3.4",
+          "ver": {
+            "kind": "verEqLater",
+            "ver": "0.3.4"
           }
         },
         {
