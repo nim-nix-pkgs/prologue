@@ -7,11 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-prologue-v0_5_6.flake = false;
-  inputs.src-prologue-v0_5_6.ref   = "refs/tags/v0.5.6";
-  inputs.src-prologue-v0_5_6.owner = "planety";
-  inputs.src-prologue-v0_5_6.repo  = "Prologue";
-  inputs.src-prologue-v0_5_6.type  = "github";
+  inputs.src-prologue-v0_6_4.flake = false;
+  inputs.src-prologue-v0_6_4.ref   = "refs/tags/v0.6.4";
+  inputs.src-prologue-v0_6_4.owner = "planety";
+  inputs.src-prologue-v0_6_4.repo  = "Prologue";
+  inputs.src-prologue-v0_6_4.type  = "github";
   
   inputs."regex".owner = "nim-nix-pkgs";
   inputs."regex".ref   = "master";
@@ -56,13 +56,13 @@
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-prologue-v0_5_6"];
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-prologue-v0_6_4"];
     over = if builtins.pathExists ./override.nix 
            then { override = import ./override.nix; }
            else { };
   in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-prologue-v0_5_6";
+    src  = deps."src-prologue-v0_6_4";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
   } );
